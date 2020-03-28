@@ -1,0 +1,30 @@
+
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    
+    <script src="https://unpkg.com/aframe-layout-component@4.3.1/dist/aframe-layout-component.min.js"></script>
+    
+    <script src="https://unpkg.com/aframe-layout-component@0.8.x/dist/aframe-look-at-component.min.js"></script>
+      
+  </head>
+  <body>
+    <a-scene background="color: #ECECEC">
+        <a-assets>
+            <img id="img1" src="assets/deep.jpg"/>
+            <img id="img2" src="assets/jump.jpg"/>
+            <img id="img3" src="assets/portal.jpg"/>
+            <img id="img4" src="assets/virus.jpg"/>
+        </a-assets>
+        
+      <a-entity layout="type: circle; radius: 2" position="0 1.4 0" rotation="-90 0 0">
+        <a-image src="#img1" look-at="#cam"></a-image>
+        <a-image src="#img2" look-at="#cam"></a-image>
+        <a-image src="#img3" look-at="#cam"></a-image>
+        <a-image src="#img4" look-at="#cam"></a-image>
+    </a-entity>
+
+      <a-camera id="cam"></a-camera>
+    </a-scene>
+  </body>
+</html>
