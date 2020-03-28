@@ -5,7 +5,7 @@ AFRAME.registerComponent('audiohandler', {
       let audioel = document.querySelector("a-sound");
 
       var audio = audioel.components.sound;
-      audioel.setAttribute("src", "https://cdn.glitch.com/bb5e7990-a24a-418a-b54f-0f55582f7d2d%2FSeptium.mp3?v=1585426832321");
+      audioel.setAttribute("src", "https://cdn.glitch.com/bb5e7990-a24a-418a-b54f-0f55582f7d2d%2Fkoto1.wav?v=1585433924182");
 
       this.el.addEventListener('click', () => {
 
