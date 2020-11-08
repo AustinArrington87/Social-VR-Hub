@@ -52,7 +52,7 @@
         playing = !playing;
       });
     }
-  })
+  });
 
 </script>
       
@@ -71,6 +71,7 @@
             <img id="world-map" src="https://cdn.glitch.com/8db576f8-c8de-4dce-962a-c9e306ba9810%2Fworld-map.png?v=1560946470686"/>
             <img id="graph-model" src="https://cdn.glitch.com/8db576f8-c8de-4dce-962a-c9e306ba9810%2Fgraph-model.png?v=1560946466599"/>
             <img id="graph-model-1" src="https://cdn.glitch.com/8db576f8-c8de-4dce-962a-c9e306ba9810%2Fgraph-model-1.png?v=1560946469085"/>
+            <iframe id="peter-portal" src="https://hubs.mozilla.com/babARHv/intercity-planetary-chillspot/?embed_token=6bda142918cf7f0028a49923a869eeba" style="width: 1024px; height: 768px;" allow="microphone; camera; vr; speaker;"></iframe>
             <!--audio asset-->
             <audio id="expSound" src="https://cdn.glitch.com/bb5e7990-a24a-418a-b54f-0f55582f7d2d%2FSeptium.mp3?v=1585426832321" preload="auto"></audio>
         </a-assets>
@@ -81,6 +82,8 @@
         <a-light type="directional" color="#ffffff" rotation="0 0 0" position="0 10 -10" intensity="0.3"></a-light>
         -->
         <!--display-->
+        
+        
       
         <a-entity position="-1.8 1.5 -1.2">
             <a-plane id="g1" src="#world-map" width="1" height="0.7" position="1 0.3 -0.4" material="transparent:true"></a-plane>
@@ -101,7 +104,8 @@
         <!-- table entity-->
         <a-box position="0 1.05 -0.7" height="0.01" width="0.3" depth="0.18" rotation="10 0 0" shadow></a-box>
         <a-entity id="table" position="0 1 -1.2" >
-            <a-plane navigate-on-click="url: https://www.bridgeagency.co/vr-dj-kit" src="#work-model-base" position="0 0.2 0" rotation="-90 0 0" material="transparent:true" shadow></a-plane>
+            <!-- navigate-on-click="url: https://www.bridgeagency.co/vr-dj-kit" -->
+            <a-plane src="#work-model-base" position="0 0.2 0" rotation="-90 0 0" material="transparent:true" shadow></a-plane>
             <a-box id="platform" rotation="0 0 0" height="0.06" width="4" depth="0.7" color="#4CC3D9"></a-box>
         </a-entity>
         
